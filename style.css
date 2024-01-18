@@ -1,0 +1,499 @@
+body {
+	margin: 0;
+	overflow: hidden;
+	background-color: #F8F2F4;
+	}
+
+
+.icon{
+	  transform: translateY(50px);
+	  position: absolute;
+	  zoom: 1.0;
+	  margin-left: 60px;
+}
+
+.menu-text {
+	text-decoration: 0;
+	list-style-type: none;
+	color: white;
+	font-family: 'DM Sans', sans-serif;
+	background-color: black;
+	font-size: 25px;
+	line-height: 50px;
+	position: relative;
+  	overflow: hidden;
+  	display: inline-block;
+  	transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.menu-text:hover {
+ 	color: grey;  
+}
+
+.menu-text::before,
+.menu-text::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 0;
+  bottom: 0;
+  background: grey; 
+  transition: width 0.3s ease-in-out;
+}
+
+.menu-text::after {
+  right: 0;
+  left: auto;
+}
+
+.menu-text:hover::before,
+.menu-text:hover::after {
+  width: 100%;
+}
+
+
+
+.menu {
+	list-style-type: none;
+	float: right;
+	background: black;
+	height: 100vh;
+	margin-top: 0px;
+	padding-top: 70px;
+	padding-right: 50px;
+	margin-bottom: 0px;
+	position: fixed;
+	right: -265px;
+	transition: all 1s ease;
+	}
+
+.menu-text2 {
+	font-size: 15px;
+	color: grey;
+	padding-bottom: 5px;
+	margin-bottom: 5px;
+	font-family: 'DM Sans', sans-serif;
+}
+
+.men {
+	position: absolute;
+	margin-left: -28px;
+	margin-top: 400px;
+}
+
+.menu:hover {
+	right: 0;
+	transition: all 1s ease;
+}
+
+
+
+.item {
+	margin-top: 0px;
+	text-decoration: none;
+	font-family: 'DM Sans', sans-serif;
+	color: #4E4E4E;
+	background-color: #D2D2D2;
+	font-size: 28px;
+	margin-right: 30px;
+	padding: 9px 27px 9px 27px;
+	border-radius: 52px;
+	transition: color 0.3s linear;
+	transition: background-color 0.5s linear;
+}
+
+.item:hover {
+	color: white;
+	background-color: black;
+}
+
+.item2 {
+	color:white;
+	background-color: black;
+	font-size: 28px;
+	text-decoration: none;
+	font-family: 'DM Sans', sans-serif;
+	font-size: 28px;
+	margin-right: 50px;
+	padding: 9px 27px 9px 27px;
+	border-radius: 52px;
+	transition: color 0.3s linear;
+	transition: background-color 0.5s linear;
+	margin-left: 600px;
+}
+
+.item2:hover {
+	color: #4E4E4E;
+	background-color: #D2D2D2;
+}
+
+.container {
+	transform: translateY(px);
+}
+
+.main-photo {
+	position: absolute;
+    margin-left: 700px;
+    zoom: 1.2;
+    margin-top: 200px;
+}
+
+
+.main-photo2 {
+	zoom: 1.3;
+	position: absolute;
+    margin-top: 87px;
+    margin-left: 575px;
+    transition: transform 0.5s;
+}
+
+.main-photo2:hover {
+	transform: scale(1.4);
+}
+
+.main-photo3 {
+	zoom: 1.2;
+	position: absolute;
+    margin-top: 90px;
+    margin-left: 825px;
+    transition: transform 0.5s;
+}
+
+.main-photo3:hover {
+	transform: scale(1.2);
+}
+
+.main-photo4 {
+	zoom: 1.3;
+	position: absolute;
+    margin-top: 270px;
+    margin-left: 335px;
+    transition: transform 0.5s;
+}
+
+.main-photo4:hover {
+	transform: scale(1.1);
+
+}
+
+.text {
+	margin-top: 220px;
+	position: absolute;
+	font-size: 28px;
+	font-family: 'DM Sans', sans-serif;
+	font-weight: 430;
+	margin-left: 435px;
+}
+
+
+.text2 {
+	margin-top: 290px;
+	position: absolute;
+	font-size: 14px;
+	font-family: 'DM Sans', sans-serif;
+	font-weight: 500;
+	margin-left: 435px;
+	transition: transform 0.3s ease-in-out;
+}
+
+.text2:hover {
+    transform: translateY(-0.1em);
+}
+
+.line {
+	position: absolute;
+	background-color: black;
+	border: none;
+	height: 2px;
+	margin-top: 430px;
+}
+
+.line2 {
+	position: absolute;
+	background-color: black;
+	border: none;
+	height: 2px;
+	margin-top: 530px;
+	margin-left: 700px;
+}
+
+.line4 {
+	margin-top: 430px;
+	height: 2px;
+	border: none;
+	position: absolute;
+	background-color: black;
+	margin-left: 265px;
+}
+
+.data2 {
+	margin-top: 415px;
+	margin-left: 205px;
+	position: absolute;
+	font-family: 'DM Sans', sans-serif;
+	font-size: 22px;
+}
+
+.exp1 {
+	margin-top: 720px;
+	margin-left: px;
+	position: absolute;
+	font-family: 'DM Sans', sans-serif;
+	font-size: 150px;
+	margin-left: 570px;
+	font-weight: 500;
+	transition: transform 0.3s ease-in-out;
+	cursor: none;
+
+}
+
+.exp1:hover {
+	transform: translateY(-0.1em)
+}
+
+.line3 {
+	position: absolute;
+	background-color: black;
+	border: none;
+	height: 2px;
+	margin-top: 530px;
+	margin-left: 1440px;
+}
+
+.data {
+	margin-top: 515px;
+	margin-left: 1385px;
+	position: absolute;
+	font-family: 'DM Sans', sans-serif;
+	font-size: 22px;
+}
+
+.exp2 {
+	margin-top: 720px;
+	margin-left: px;
+	position: absolute;
+	font-family: 'DM Sans', sans-serif;
+	font-size: 150px;
+	margin-left: 660px;
+	font-weight: 500;
+	transition: transform 0.3s ease-in-out;
+	cursor: none;
+}
+
+.exp2:hover {
+	transform: translateY(-0.1em)
+}
+
+.exp3 {
+	margin-top: 720px;
+	margin-left: px;
+	position: absolute;
+	font-family: 'DM Sans', sans-serif;
+	font-size: 150px;
+	margin-left: 760px;
+	font-weight: 500;
+	transition: transform 0.3s ease-in-out;
+	cursor: none;
+}
+
+.exp3:hover {
+	transform: translateY(-0.1em)
+}
+
+.exp4 {
+	margin-top: 720px;
+	margin-left: px;
+	position: absolute;
+	font-family: 'DM Sans', sans-serif;
+	font-size: 150px;
+	margin-left: 850px;
+	font-weight: 500;
+	transition: transform 0.3s ease-in-out;
+	cursor: none;
+}
+
+.exp4:hover {
+	transform: translateY(-0.1em)
+}
+
+.exp5 {
+	margin-top: 720px;
+	margin-left: px;
+	position: absolute;
+	font-family: 'DM Sans', sans-serif;
+	font-size: 150px;
+	margin-left: 920px;
+	font-weight: 500;
+	transition: transform 0.3s ease-in-out;
+	cursor: none;
+}
+
+.exp5:hover {
+	transform: translateY(-0.1em)
+}
+
+.exp6 {
+	margin-top: 720px;
+	margin-left: px;
+	position: absolute;
+	font-family: 'DM Sans', sans-serif;
+	font-size: 150px;
+	margin-left: 1040px;
+	font-weight: 500;
+	transition: transform 0.3s ease-in-out;
+	cursor: none;
+}
+
+.exp6:hover {
+	transform: translateY(-0.1em)
+}
+
+.exp7 {
+	margin-top: 720px;
+	position: absolute;
+	font-family: 'DM Sans', sans-serif;
+	font-size: 150px;
+	margin-left: 1140px;
+	font-weight: 500;
+	transition: transform 0.3s ease-in-out;
+	cursor: none;
+}
+
+.exp7:hover {
+	transform: translateY(-0.1em)
+}
+
+.exp8 {
+	margin-top: 720px;
+	margin-left: px;
+	position: absolute;
+	font-family: 'DM Sans', sans-serif;
+	font-size: 150px;
+	margin-left: 1170px;
+	font-weight: 500;
+	transition: transform 0.3s ease-in-out;
+	cursor: none;
+}
+
+.exp8:hover {
+	transform: translateY(-0.1em)
+}
+
+.exp9 {
+	margin-top: 720px;
+	margin-left: px;
+	position: absolute;
+	font-family: 'DM Sans', sans-serif;
+	font-size: 150px;
+	margin-left: 1285px;
+	font-weight: 500;
+	transition: transform 0.3s ease-in-out;
+	cursor: none;
+}
+
+.exp9:hover {
+	transform: translateY(-0.1em)
+}
+
+.main2-png {
+	margin-top: 100px;
+	position: absolute;
+	margin-left: 350px;
+	transition: transform 0.5s ease-in-out; 
+  
+}
+
+.main2-png:hover {
+  	transform: scale(1.2);
+}
+
+
+
+.main2-text {
+	position: absolute;
+	font-family: 'DM Sans', sans-serif;
+	font-size: 40px;
+	color: white;
+	font-weight: 400;
+	margin-top: 350px;
+	margin-left: 1050px;
+}
+
+.main2 {
+	margin-top: -90px;
+	position: absolute;
+	top: -1050px;
+	transition: top 1s ease-in-out;
+	margin-bottom: 0px;
+}
+
+.visible {
+  top: 0%;
+}
+
+.registration2 {
+	position: absolute;
+	text-decoration: none;
+	color: white;
+	background-color: black;
+	font-family: 'DM Sans', sans-serif;
+	font-size: 28px;
+	margin-left: 1050px;
+	margin-top: 550px;
+	padding: 5px 20px 5px 20px;
+	border-radius: 10px;
+	border: 1px solid white;
+	transition: transform 0.3s ease-in-out;
+}
+
+.registration2:hover {
+	transform: scale(0.97);
+}
+
+.registration1 {
+	position: absolute;
+	text-decoration: none;
+	color: white;
+	background-color: black;
+	font-family: 'DM Sans', sans-serif;
+	font-size: 28px;
+	margin-left: 1050px;
+	margin-top: 475px;
+	padding: 5px 20px 5px 20px;
+	border-radius: 10px;
+	border: 1px solid white;
+	transition: transform 0.3s ease-in-out;
+}
+
+.registration1:hover {
+	transform: scale(0.97);
+}
+
+
+.main-text2 {
+	position: absolute;
+	font-family: 'DM Sans', sans-serif;
+	font-size: 12px;
+	color: white;
+	font-weight: 400;
+	margin-top: 620px;
+	margin-left: 1050px;
+}
+
+.main-text2 span {
+	text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

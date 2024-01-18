@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATOMIC</title>
+    <link rel="stylesheet" type="text/css" href="js">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100;9..40,200;9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            height: 100%;
+            background-color: #F8F2F4;
+            overflow-x: hidden;
+            transition: margin-left 1s ease;
+        }
+
+        .slide-left {
+            margin-left: -265px;
+        }
+
+        .shift-left {
+            margin-left: 0;
+        }
+
+        .data,
+        .data2 {
+            position: absolute;
+            font-family: 'DM Sans', sans-serif;
+            font-size: 22px;
+            color: black;
+            animation: pulse 1.5s infinite alternate;
+            transition: color 0.3s ease-in-out;
+            cursor: pointer;
+        }
+
+        .data:hover,
+        .data2:hover {
+            color: #2E86C1;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+
+            100% {
+                transform: scale(1.1);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img class="icon" src="Atomic.png">
+            <ul class="menu">
+                <img class="men" src="menu.png">
+                <li class="menu-text2">Httpster</li>
+                <li><a class="menu-text" href="@">Get the newsletter</li>
+                <li><a class="menu-text" href="@">Submit a website</li>
+                <li><a class="menu-text" href="@">Follow on me</li>
+                <li><a class="menu-text" href="@">Contact</li>
+                <li><a class="menu-text" href="@">About</li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <a class="item2" href="@">Particulars</a>
+        <a class="item" href="@">Product</a>
+        <a class="item" href="@">Blog</a>
+        <a class="item" href="@">New</a>
+    </div>
+
+    <main>
+        <div class="main-photo1">
+            <hr class="line3" width="23%" size="3px">
+            <hr class="line2" width="35%" size="3px">
+            <hr class="line" width="10%" size="3px">
+            <hr class="line4" width="10%" size="3px">
+            <h1 class="exp1">E</h1>
+            <h1 class="exp2">X</h1>
+            <h1 class="exp3">P</h1>
+            <h1 class="exp4">L</h1>
+            <h1 class="exp5">O</h1>
+            <h1 class="exp6">S</h1>
+            <h1 class="exp7">I</h1>
+            <h1 class="exp8">O</h1>
+            <h1 class="exp9">N</h1>
+            <h1 class="text">
+                <p>Atomic explosion</p>
+            </h1>
+            <h1 class="text2">
+                <p>is a phenomenon in which enormous amounts <br>fusion of atomic nuclei.</p>
+            </h1>
+            <img class="main-photo" src="maincenter.png">
+            <img class="main-photo4" src="maincenter4.png">
+            <img class="main-photo2" src="maincenter2.png">
+            <img class="main-photo3" src="maincenter3.png">
+            <h1 class="data" onclick="changeTheme()">1971</h1>
+            <h1 class="data2" onclick="changeTheme()">1945</h1>
+        </div>
+    </main>
+
+    <div class="menu">Меню</div>
+
+    <script>
+document.addEventListener('DOMContentLoaded', function () {
+    const main2Elements = document.querySelectorAll('.main2');
+
+    document.addEventListener('click', function (event) {
+        // Проверяем, что клик был не по ссылке
+        if (!event.target.matches('a')) {
+            main2Elements.forEach(function (element) {
+                element.classList.toggle('visible');
+            });
+        }
+    });
+});
+        const body = document.body;
+        const menu = document.querySelector('.menu');
+        const shiftLeftElements = document.querySelectorAll('.shift-left');
+
+        menu.addEventListener('mouseenter', function () {
+            body.classList.add('slide-left');
+            shiftLeftElements.forEach(function (element) {
+                element.classList.add('slide-left');
+            });
+        });
+
+        menu.addEventListener('mouseleave', function () {
+            body.classList.remove('slide-left');
+            shiftLeftElements.forEach(function (element) {
+                element.classList.remove('slide-left');
+            });
+        });
+
+        body.addEventListener('transitionend', function () {
+            if (!menu.matches(':hover')) {
+                body.classList.remove('slide-left');
+                shiftLeftElements.forEach(function (element) {
+                    element.classList.remove('slide-left');
+                });
+            }
+        });
+
+        function changeTheme() {
+            body.classList.toggle('dark-theme');
+        }
+    </script>
+
+<main class="main2">
+    <a class="registration1 " href="@">Continue with Google</a>
+    <a class="registration2" href="@">Continue with Email</a>
+    <h1 class="main2-text">Unlock the Premium to <br>EXPLOSION Effect</h1>
+    <h1 class="main-text2"> An explosion generates enormous amounts of heat, light and radiation,<br>
+    <span> causing destruction</span> over a large area and danger to life.</h1>
+    <img class="main2-png" src="Frame 4.png">
+    <img class="main2-body" src="mein-body.png">
+</main>
+
+</body>
+
+</html>
+
+
+
+
